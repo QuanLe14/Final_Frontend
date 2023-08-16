@@ -12,7 +12,7 @@ function BookList() {
     
     const getBooks = () =>{
       axios
-      .get('https://backend-300365849.onrender.com/')
+      .get("http://localhost:5000/book")
       .then((res) => {
         setBooks(res.data);
       })
@@ -24,7 +24,7 @@ function BookList() {
     const deleteBook = (id)=> {
       console.log(id)
       axios
-      .delete('https://backend-300365849.onrender.com/'+id)
+      .delete(`http://localhost:5000/book/${id}`)
       .then((res) => {
         getBooks()
         console.log(res.data)

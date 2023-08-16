@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import axios from "axios";
 import React, { useEffect, useState } from "react";
+import axios from 'axios';
 
 function CreateBook() {
   const [title, setTitle] = useState("");
@@ -24,7 +24,7 @@ function CreateBook() {
     }
 
     axios
-    .post('https://backend-300365849.onrender.com/', createBookRequest)
+    .post("http://localhost:5000/book/add", createBookRequest)
     .then((res) => {
       let book = res.data.BookAdded
       console.log(book)

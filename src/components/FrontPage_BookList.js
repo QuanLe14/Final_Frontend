@@ -25,7 +25,7 @@ function BookList() {
     const deleteBook = (id)=> {
       console.log(id)
       axios
-      .delete(`http://localhost:5000/book/${id}`)
+      .delete(`http://localhost:5000/book/delete/${id}`)
       .then((res) => {
         getBooks()
         console.log(res.data)

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import BookCard from "./BookCard";
 import axios from "axios";
+import "../App.css";
 
 function BookList() {
     const [books, setBooks] = useState([]);

@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 import BookList from './components/FrontPage_BookList';
 import CreateBook from './components/CreateBook';
 
